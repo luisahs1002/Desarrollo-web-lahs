@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+body{
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 10%;
+    background-color: rgba(0, 0, 0, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+  }
+/* NAVBAR*/
+
+  .header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.6rem 12%;
+    background-color:rgba(241, 9, 9, 0.473);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+.navbar a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: 250;
+    font-size: 1.7vw;
+    margin-left: 1.5rem;
+}
+
+.logo{
+    width: 15%;
+    height: 30px;
+    border-radius: 12px;
+    object-fit: cover;
+} 
+/*----------------------------------------------------------------*/
+/* BANNERS*/
+
+.banner{
+    background-image: url(./imagenes/portada2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-piloto{
+    background-image: url(./imagenes/volante.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    padding: 150px;
+}
+
+.banner-equipo{
+    background-image: url(./imagenes/volante.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    
+}
+
+.titulo-circuitos{
+    background: rgba(241, 9, 9, 0.473);;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    color: blanchedalmond;
+    margin: 15px;
+}
+
+.info{
+    text-align: center;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 10px 10px;
+    margin: 5px;
+    width: 50%;
+    background: rgba(0, 0, 0, 0.507);   
+}
+.info-pilotos{
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 10px 10px;
+    margin: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+.info-equipos{
+    border-radius: 10px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+    font-size: 1.7rem;
+    padding: 10px 10px;
+    margin: 5px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.507);
+}
+
+strong{
+    color: rgb(228, 224, 220);
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+/*---------------------------------/*----------------------------------------*/
+
+.formula-1{
+    background: rgba(241, 9, 9, 0.473);;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 2rem;
+    color: blanchedalmond;
+}
+
+/*CARDS INDEX*/ 
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 34%;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 5px;
+    flex-wrap: nowrap;
+}
+
+.card-img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+/*----------------------------------------------------------------*/
+/*CARDS PILOTOS*/
+
+.container-piloto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-piloto{
+    width: 200px;
+    height: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #fff;
+    position: relative;
+    margin: 10px;
+}
+
+.card-img-piloto{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-body{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    position: absolute;
+    background: #1f3d4774;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    color: #fff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: 2s;
+}
+
+.card-titulo{
+    text-transform: uppercase;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.card-team{
+    text-transform: capitalize;
+    font-size: 10px;
+    font-weight: 300;
+}
+
+.card-info{
+    font-size: 15px;
+    line-height: 25px;
+    margin: 40px 0;
+    font-weight: 400;
+}
+/*----------------------------------------------------------------*/
+/* BOTONES DE LAS CARDS-PILOTOS*/
+
+         /* FERRARI*/
+
+.card-boton-ferrari{
+    color: #eff3f5f3;
+    background: #bf0606d9;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* MCLAREN*/
+.card-boton-mclaren{
+    color: #eff3f5f3;
+    background: #f45c04;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* REDBULL*/ 
+
+.card-boton-redbull{
+    color: #eff3f5f3;
+    background: #010553;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* MERCEDES*/
+
+.card-boton-mercedes{
+    color: #eff3f5f3;
+    background: #03ebebdf;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* ASTON MARTIN*/
+.card-boton-aston{
+    color: #eff3f5f3;
+    background: #1a5702fc;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* WILLIAMS*/
+
+.card-boton-williams{
+    color: #eff3f5f3;
+    background: #044abbfe;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+/* ALPINE*/
+
+.card-boton-alpine{
+    color: #eff3f5f3;
+    background: #f70539;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* KICK*/
+
+.card-boton-kick{
+    color: #eff3f5f3;
+    background: #21d401;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+/*-------------------------------------------------------------------*/
+/* BOTON INFORMATIVO DE LOS CIRCUITOS*/
+
+.card-boton{
+    color: #eff3f5f3;
+    background: #12121255;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+
+/*HOVER*/
+.card-piloto:hover .card-body{
+    right: 0;
+}
+
+/* CARDS EQUIPOS CON GRID*/
+
+/* FERRARI*/
+.container-equipo-ferrari{
+    display: grid;
+    grid-template-areas:
+     "ferrari1 ferrari3 ferrari4"
+     "ferrari1 ferrari3 ferrari4"
+     "ferrari2 ferrari2 ferrari5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,180px);
+     gap: 5px;
+     justify-content: center;
+     align-content: center;
+     padding: 5px;
+}
+
+.card-img-ferrari1{
+    grid-area: ferrari1;
+}
+
+.card-img-ferrari2{
+    grid-area: ferrari2;
+}
+
+.card-img-ferrari3{
+    grid-area: ferrari3;
+}
+
+.card-img-ferrari4{
+    grid-area: ferrari4;
+}
+
+.card-img-ferrari5{
+    grid-area: ferrari5;
+}
+
+.container-equipo-ferrari img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*MCLAREN*/
+.container-equipo-mclaren{
+    display: grid;
+    grid-template-areas:
+     "mclaren1 mclaren3 mclaren4"
+     "mclaren1 mclaren3 mclaren4"
+     "mclaren2 mclaren2 mclaren5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,180px);
+     gap: 5px;
+     justify-content: center;
+     padding: 10px;
+}
+
+.card-img-mclaren1{
+    grid-area: mclaren1;
+}
+
+.card-img-mclaren2{
+    grid-area: mclaren2;
+}
+
+.card-img-mclaren3{
+    grid-area: mclaren3;
+}
+
+.card-img-mclaren4{
+    grid-area: mclaren4;
+}
+
+.card-img-mclaren5{
+    grid-area: mclaren5;
+}
+
+.container-equipo-mclaren img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* REDBULL*/
+
+.container-equipo-redbull{
+    display: grid;
+    grid-template-areas:
+     "redbull1 redbull3 redbull4"
+     "redbull1 redbull3 redbull4"
+     "redbull2 redbull2 redbull5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,180px);
+     gap: 5px;
+     justify-content: center;
+     padding: 10px;
+}
+
+.card-img-redbull1{
+    grid-area: redbull1;
+}
+
+.card-img-redbull2{
+    grid-area: redbull2;
+}
+
+.card-img-redbull3{
+    grid-area: redbull3;
+}
+
+.card-img-redbull4{
+    grid-area: redbull4;
+}
+
+.card-img-redbull5{
+    grid-area: redbull5;
+}
+
+.container-equipo-redbull img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* MERCEDES AMG */ 
+
+.container-equipo-mercedes{
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+     "mercedes1 mercedes3 mercedes3"
+     "mercedes1 mercedes4 mercedes4"
+     "mercedes2 mercedes2 mercedes5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,180px);
+     gap: 5px;
+     justify-content: center;
+     padding: 10px;
+}
+
+.card-img-mercedes1{
+    grid-area: mercedes1;
+}
+
+.card-img-mercedes2{
+    grid-area: mercedes2;
+}
+
+.card-img-mercedes3{
+    grid-area: mercedes3;
+}
+
+.card-img-mercedes4{
+    grid-area: mercedes4;
+}
+.card-img-mercedes5{
+    grid-area: mercedes5;
+}
+
+.container-equipo-mercedes img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* CARD INFORMATIVA DE EQUIPO*/
+
+.card-equipo{
+    width: 400px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 2px solid #0c0c0c87;
+    position: relative;
+    margin: 50px;
+}
+
+.card-body-equipo{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: -100%;
+    position: absolute;
+    background: #1f3d4774;
+    backdrop-filter: blur(7px);
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 3s;
+}
+/*--------------------------------------------------------------------*/
+
+footer {
+    background: rgba(241, 9, 9, 0.473);;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+
+.info-2{
+    background: #fff;
+    color: black;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* MOBILE*/ 
+@media(max-width:480px){
+       /*EQUIPOS*/
+.banner-equipo{
+   width: 90%;
+}
+
+.container-equipo-ferrari{
+grid-template-areas: 
+"ferrari1"
+"ferrari2"
+"ferrari3"
+"ferrari4"
+"ferrari5";
+grid-template-columns: 430px;
+grid-template-rows: 150px ;
+}
+.container-equipo-ferrari img{
+    height: 200px;
+}
+.container-equipo-mclaren{
+    grid-template-areas: 
+    "mclaren1"
+    "mclaren2"
+    "mclaren3"
+    "mclaren4"
+    "mclaren5";
+    grid-template-columns: 430px;
+    grid-template-rows: 200px;
+}
+.container-equipo-mclaren img{
+    height: 400px;
+}
+
+.container-equipo-redbull{
+    grid-template-areas: 
+    "redbull1"
+    "redbull2"
+    "redbull3"
+    "redbull4"
+    "redbull5";
+    grid-template-columns: 430px;
+    grid-template-rows: 300px;
+}
+.container-equipo-redbull img{
+    height: 400px;
+}
+
+.container-equipo-mercedes{
+    grid-template-areas: 
+    "mercedes1"
+    "mercedes2"
+    "mercedes3"
+    "mercedes4"
+    "mercedes5";
+    grid-template-columns: 430px;
+    grid-template-rows: 300px;
+}
+.container-equipo-mercedes img{
+    height: 400px;
+}
+}
+
+
+
+
+/* TABLET*/
