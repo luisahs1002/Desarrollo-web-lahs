@@ -1,0 +1,26 @@
+@use './variables';
+
+.titulo-circuitos{
+    background: rgba(241, 9, 9, 0.473);;
+    width: 100vw;
+    height: 300px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 3rem;
+    color: blanchedalmond;
+    margin: 15px;
+}
+.card-boton{
+    color: #eff3f5f3;
+    width: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-weight: 500;
+    cursor: pointer;
+    background: #12121255;
+}

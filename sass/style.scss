@@ -1,0 +1,90 @@
+@use './partials/variables';
+@use './partials/index';
+@use './partials/pilotos';
+@use './partials/equipos';
+@use './partials/circuitos';
+
+
+// GENERAL //
+/* GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    min-height: 10%;
+    background-color: rgba(0, 0, 0, 0.849);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+// NAVBAR//
+/* NAVBAR*/
+
+.header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 0.6rem 12%;
+    background-color:rgba(241, 9, 9, 0.473);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    .logo{
+        width: 60px;
+        height: 30px;
+        border-radius: 12px;
+        object-fit: cover;
+    } 
+    .navbar a {
+        text-decoration: none;
+        color: antiquewhite;
+        font-weight: 300;
+        font-size: 1.9vw;
+        margin-left: 1.5rem;
+        &:hover{
+            color: rgb(4, 117, 9);
+        }
+    }
+  }
+
+// FOOTER//
+/*FOOTER*/
+
+footer {
+    background: rgba(241, 9, 9, 0.473);;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 50px;
+    .logo{
+        width: 100vw;
+        height: 20vh;
+        border-radius: 12px;
+        object-fit: cover;
+    } 
+    
+}
+
+@media (max-width:350px){
+    .header{
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width:500px){
+    .header{
+        width: 100vw;
+        padding: 15px;
+        
+    }
+}
