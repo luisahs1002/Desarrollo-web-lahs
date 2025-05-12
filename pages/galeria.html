@@ -5,12 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 
     <!--GOOGLE FONTS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- ANIMATE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- TAILWIND -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <title>Formula 1</title>
 </head>
@@ -18,15 +28,39 @@
     <header class="header">
         <img class="logo" src="../imagenes/logo.jpeg" alt="logo-f1">
         <nav class="navbar">
-            <a href="../index.html">Home</a>
-            <a href="./pilotos.html">Pilotos</a>
-            <a href="./equipos.html">Equipos</a>
-            <a href="./circuitos.html">Circuitos</a>
-            <a href="#">Galeria</a>
+            <a class="hover:text-red-800" href="../index.html">Home</a>
+            <a class="hover:text-red-800" href="./pilotos.html">Pilotos</a>
+            <a class="hover:text-red-800" href="./equipos.html">Equipos</a>
+            <a class="hover:text-red-800" href="./circuitos.html">Circuitos</a>
+            <a class="hover:text-red-800" href="#">Galeria</a>
         </nav>
     </header>
+    <main>
+        <section class="container-galeria">
+            <div class="card-galery">
+                <img class="img-galery" src="../imagenes/williams-5.jpeg" alt="galery">
+            </div>
+            <div class="card-galery">
+                <img class="img-galery" src="../imagenes/mclaren-4.jpeg" alt="galery">
+            </div>
+            <div class="card-galery">
+                <img class="img-galery" src="../imagenes/redbull-3.jpeg" alt="galery">
+            </div>
+            <div class="card-galery">
+                <img  data-aos="fade-right" class="img-galery" src="../imagenes/ferrari-1.jpeg" alt="galery">
+            </div>
+            <div class="card-galery">
+                <img class="img-galery" src="../imagenes/haas-1.jpeg" alt="galery">
+            </div>
+
+        </section>
+    </main>
     <footer>
         <img class="logo" src="../imagenes/logo.jpeg" alt="logo-f1">
     </footer>
+    <!-- AOS-->
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

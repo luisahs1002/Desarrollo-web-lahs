@@ -1,13 +1,12 @@
 // BANNER EQUIPO //
 /* BANNER EQUIPO */
-
 .banner-equipo{
-    background-image: url(../imagenes/volante.jpeg);
+    background-image: url(../imagenes/llantalv.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     object-fit: cover;
-    width: 100vw;
+    width: 100%;
     min-height: 40vh;
     display: flex;
     justify-content: center;
@@ -71,7 +70,7 @@
      "ferrari1 ferrari3 ferrari4"
      "ferrari2 ferrari2 ferrari5";
      grid-template-columns: repeat(3,1fr);
-     grid-template-rows: repeat(3,180px);
+     grid-template-rows: repeat(3,200px);
      justify-content: center;
      align-content: center;
      gap: 5px;
@@ -113,7 +112,7 @@
      "mclaren1 mclaren3 mclaren4"
      "mclaren2 mclaren2 mclaren5";
      grid-template-columns: repeat(3,1fr);
-     grid-template-rows: repeat(3,180px);
+     grid-template-rows: repeat(3,200px);
      gap: 5px;
      width: 100vw;
      justify-content: center;
@@ -153,7 +152,7 @@
      "redbull1 redbull3 redbull4"
      "redbull2 redbull2 redbull5";
      grid-template-columns: repeat(3,1fr);
-     grid-template-rows: repeat(3,180px);
+     grid-template-rows: repeat(3,200px);
      gap: 5px;
      width: 100vw;
      justify-content: center;
@@ -194,7 +193,7 @@
      "mercedes1 mercedes4 mercedes4"
      "mercedes2 mercedes2 mercedes5";
      grid-template-columns: repeat(3,1fr);
-     grid-template-rows: repeat(3,180px);
+     grid-template-rows: repeat(3,200px);
      gap: 5px;
      width: 100vw;
      justify-content: center;
@@ -223,18 +222,211 @@
         border-radius: 10px;
     }
 }
-
-
+// ASTON MARTIN //
+/* ASTON MARTIN */
+.container-equipo-aston-martin{
+    display: grid;
+    grid-template-areas:
+     "aston1 aston3 aston3"
+     "aston1 aston5 aston4"
+     "aston2 aston2 aston4"
+     "aston2 aston2 aston4";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(4,200px);
+     gap: 5px;
+     width: 100vw;
+     justify-content: center;
+     .card-img-aston1{
+        grid-area: aston1;
+    }
+    
+    .card-img-aston2{
+        grid-area: aston2;
+    }
+    
+    .card-img-aston3{
+        grid-area: aston3;
+    }
+    
+    .card-img-aston4{
+        grid-area: aston4;
+    }
+    .card-img-aston5{
+        grid-area: aston5;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+// WILLIAMS //
+/* WILLIAMS */ 
+.container-equipo-williams{
+    display: grid;
+    grid-template-areas:
+     "williams1 williams3 williams5"
+     "williams1 williams3 williams5"
+     "williams2 williams2 williams4";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,200px);
+     gap: 5px;
+     width: 100vw;
+     justify-content: center;
+     .card-img-williams1{
+        grid-area: williams1;
+    }
+    
+    .card-img-williams2{
+        grid-area: williams2;
+    }
+    
+    .card-img-williams3{
+        grid-area: williams3;
+    }
+    
+    .card-img-williams4{
+        grid-area: williams4;
+    }
+    .card-img-williams5{
+        grid-area: williams5;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+// ALPINE // 
+/* ALPINE */ 
+.container-equipo-alpine{
+    display: grid;
+    grid-template-areas:
+     "alpine1 alpine3 alpine4"
+     "alpine1 alpine3 alpine4"
+     "alpine2 alpine2 alpine5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,200px);
+     gap: 5px;
+     width: 100vw;
+     justify-content: center;
+     .card-img-alpine1{
+        grid-area: alpine1;
+    }
+    
+    .card-img-alpine2{
+        grid-area: alpine2;
+    }
+    
+    .card-img-alpine3{
+        grid-area: alpine3;
+    }
+    
+    .card-img-alpine4{
+        grid-area: alpine4;
+    }
+    .card-img-alpine5{
+        grid-area: alpine5;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+// KICK // 
+/* KICK */ 
+.container-equipo-kick{
+    display: grid;
+    grid-template-areas:
+     "kick1 kick3 kick4"
+     "kick1 kick3 kick4"
+     "kick2 kick2 kick5";
+     grid-template-columns: repeat(3,1fr);
+     grid-template-rows: repeat(3,200px);
+     gap: 5px;
+     width: 100vw;
+     justify-content: center;
+     .card-img-kick1{
+        grid-area: kick1;
+    }
+    
+    .card-img-kick2{
+        grid-area: kick2;
+    }
+    
+    .card-img-kick3{
+        grid-area: kick3;
+    }
+    
+    .card-img-kick4{
+        grid-area: kick4;
+    }
+    .card-img-kick5{
+        grid-area: kick5;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+// HAAS //
+/* HAAS */
+.container-equipo-haas{
+    display: grid;
+    grid-template-areas:
+     "haas1 haas2 haas3 haas4 haas5"
+     "haas1 haas2 haas3 haas4 haas5";
+     grid-template-columns: repeat(5,1fr);
+     grid-template-rows: repeat(2,200px);
+     gap: 2px;
+     width: 100vw;
+     justify-content: center;
+     .card-img-haas1{
+        grid-area: haas1;
+    }
+    
+    .card-img-haas2{
+        grid-area: haas2;
+    }
+    
+    .card-img-haas3{
+        grid-area: haas3;
+    }
+    
+    .card-img-haas4{
+        grid-area: haas4;
+    }
+    .card-img-haas5{
+        grid-area: haas5;
+    }
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
 // MOBILE //
 /* MOBILE */
 @media (max-width:500px){
     .container-equipo-ferrari,
     .container-equipo-mclaren,
     .container-equipo-redbull,
-    .container-equipo-mercedes{
+    .container-equipo-mercedes,
+    .container-equipo-aston-martin,
+    .container-equipo-williams,
+    .container-equipo-alpine,
+    .container-equipo-kick,
+    .container-equipo-haas{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 400px;
+        grid-template-rows: 250px;
         gap: 1rem;
         justify-content: center;
         align-content: center;
@@ -251,16 +443,16 @@
             height: 400px;
         }
         .card-img-ferrari2{
-            height: 400px;
+            height: 250px;
         }
         .card-img-ferrari3{
-            height: 400px;
+            height: 250px;
         }
         .card-img-ferrari4{
             height: 400px;
         }
-        .card-img-ferrari3{
-            height: 400px;
+        .card-img-ferrari5{
+            height: 350px;
         }
     }
     .container-equipo-mclaren{
@@ -303,7 +495,7 @@
             height: 400px;
         }
         .card-img-redbull4{
-            height: 400px;
+            height: 450px;
         }
         .card-img-redbull5{
             height: 400px;
@@ -317,7 +509,7 @@
         "mercedes4"
         "mercedes5";
         .card-img-mercedes1{
-            height: 400px;
+            height: 250px;
         }
         .card-img-mercedes2{
             height: 400px;
@@ -332,5 +524,128 @@
             height: 400px;
         }
     }
-   // falta ajustar el bendito banner//
+    .container-equipo-aston-martin{
+        grid-template-areas: 
+        "aston1"
+        "aston2"
+        "aston3"
+        "aston4"
+        "aston5";
+        .card-img-aston1{
+            height: 400px;
+        }
+        .card-img-aston2{
+            height: 400px;
+        }
+        .card-img-aston3{
+            height: 400px;
+        }
+        .card-img-aston4{
+            height: 400px;
+        }
+        .card-img-aston5{
+            height: 400px;
+        }
+    }
+    .container-equipo-williams{
+        grid-template-areas: 
+        "williams1"
+        "williams2"
+        "williams3"
+        "williams4"
+        "williams5";
+        .card-img-williams1{
+            height: 400px;
+        }
+        .card-img-williams2{
+            height: 400px;
+        }
+        .card-img-williams3{
+            height: 400px;
+        }
+        .card-img-williams4{
+            height: 400px;
+        }
+        .card-img-williams5{
+            height: 400px;
+        }
+    }
+    .container-equipo-alpine{
+        grid-template-areas: 
+        "alpine1"
+        "alpine2"
+        "alpine3"
+        "alpine4"
+        "alpine5";
+        .card-img-alpine1{
+            height: 400px;
+        }
+        .card-img-alpine2{
+            height: 400px;
+        }
+        .card-img-alpine3{
+            height: 400px;
+        }
+        .card-img-alpine4{
+            height: 400px;
+        }
+        .card-img-alpine5{
+            height: 400px;
+        }
+    }
+    .container-equipo-kick{
+        grid-template-areas: 
+        "kick1"
+        "kick2"
+        "kick3"
+        "kick4"
+        "kick5";
+        .card-img-kick1{
+            height: 400px;
+        }
+        .card-img-kick2{
+            height: 400px;
+        }
+        .card-img-kick3{
+            height: 400px;
+        }
+        .card-img-kick4{
+            height: 400px;
+        }
+        .card-img-kick5{
+            height: 400px;
+        }
+    }
+    .container-equipo-haas{
+        grid-template-areas: 
+        "haas1"
+        "haas1"
+        "haas2"
+        "haas3"
+        "haas4"
+        "haas5";
+        .card-img-haas1{
+            height: 400px;
+        }
+        .card-img-haas2{
+            height: 400px;
+        }
+        .card-img-haas3{
+            height: 400px;
+        }
+        .card-img-haas4{
+            height: 400px;
+        }
+        .card-img-haas5{
+            height: 400px;
+        }
+    }
+    .banner-equipo{
+        width: 108vw;
+    }
+    .header{
+        width: 100%;
+    }
 }
+
+

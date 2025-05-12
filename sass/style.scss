@@ -3,6 +3,8 @@
 @use './partials/pilotos';
 @use './partials/equipos';
 @use './partials/circuitos';
+@use './partials/galeria';
+
 
 
 // GENERAL //
@@ -23,6 +25,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    overflow-x: hidden;
   }
 // NAVBAR//
 /* NAVBAR*/
@@ -47,11 +50,11 @@ body {
     .navbar a {
         text-decoration: none;
         color: antiquewhite;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 1.9vw;
         margin-left: 1.5rem;
         &:hover{
-            color: rgb(4, 117, 9);
+            color: rgb(117, 4, 4);
         }
     }
   }
@@ -63,11 +66,11 @@ footer {
     background: rgba(241, 9, 9, 0.473);;
     width: 100%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 50px;
     .logo{
-        width: 100vw;
-        height: 20vh;
+        width: 300px;
+        height: 70px;
         border-radius: 12px;
         object-fit: cover;
     } 

@@ -1,0 +1,23 @@
+.container-galeria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    .card-galery{
+        width: 200px;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        border: 2px solid #040404;
+        margin: 20px;
+        .img-galery{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            
+        }
+        
+    }
+}
