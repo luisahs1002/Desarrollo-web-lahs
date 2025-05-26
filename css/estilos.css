@@ -91,14 +91,13 @@
   flex-direction: row-reverse;
   flex-wrap: nowrap;
   gap: 5px;
-  align-items: center;
 }
 .container .card {
-  max-width: 100vw;
+  max-width: 100%;
   height: 250px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   border-radius: 5px;
-  padding: 0;
 }
 .container .card .card-img {
   object-fit: cover;
@@ -114,7 +113,7 @@
   display: flex;
   text-align: center;
   justify-content: center;
-  padding: 30px;
+  padding: 50px;
 }
 
 /* PAGE PILOTO */
@@ -291,7 +290,7 @@
   display: grid;
   grid-template-areas: "ferrari1 ferrari3 ferrari4" "ferrari1 ferrari3 ferrari4" "ferrari2 ferrari2 ferrari5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   justify-content: center;
   align-content: center;
   gap: 5px;
@@ -325,7 +324,7 @@
   display: grid;
   grid-template-areas: "mclaren1 mclaren3 mclaren4" "mclaren1 mclaren3 mclaren4" "mclaren2 mclaren2 mclaren5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -357,7 +356,7 @@
   display: grid;
   grid-template-areas: "redbull1 redbull3 redbull4" "redbull1 redbull3 redbull4" "redbull2 redbull2 redbull5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -389,7 +388,7 @@
   display: grid;
   grid-template-areas: "mercedes1 mercedes3 mercedes3" "mercedes1 mercedes4 mercedes4" "mercedes2 mercedes2 mercedes5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -421,7 +420,7 @@
   display: grid;
   grid-template-areas: "aston1 aston3 aston3" "aston1 aston5 aston4" "aston2 aston2 aston4" "aston2 aston2 aston4";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 200px);
+  grid-template-rows: repeat(4, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -453,7 +452,7 @@
   display: grid;
   grid-template-areas: "williams1 williams3 williams5" "williams1 williams3 williams5" "williams2 williams2 williams4";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -485,7 +484,7 @@
   display: grid;
   grid-template-areas: "alpine1 alpine3 alpine4" "alpine1 alpine3 alpine4" "alpine2 alpine2 alpine5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -517,7 +516,7 @@
   display: grid;
   grid-template-areas: "kick1 kick3 kick4" "kick1 kick3 kick4" "kick2 kick2 kick5";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-rows: repeat(3, 300px);
   gap: 5px;
   width: 100vw;
   justify-content: center;
@@ -549,7 +548,7 @@
   display: grid;
   grid-template-areas: "haas1 haas2 haas3 haas4 haas5" "haas1 haas2 haas3 haas4 haas5";
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 200px);
+  grid-template-rows: repeat(2, 300px);
   gap: 2px;
   width: 100vw;
   justify-content: center;
